@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>trainPeru</title>
+        <!-- Fonts -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <!-- Styles -->
+    </head>
+    <body>
+        <section class="content">
+            <div class="row">
+                <div class="col-md-12">
+                  <div class="box box-primary">
+                    <div class="box-header with-border">
+                      <h3 class="box-title">Employees
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                      <table id="example" class="display" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th class="col-md-9">name</th>
+                                <th class="col-md-2">email</th>
+                                <th class="col-md-2">salary</th>
+                                <th class="col-md-1">[ver]</th>
+                            </tr>
+                        </thead>
+                        <tbody id="example_body" ></tbody>
+                      </table>
+                    </div>
+                    <!-- /.box-body -->
+                  </div>
+                  <!-- /.box -->
+                </div>
+            </div>
+        </section>
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Employee </h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Name </p>
+                        <label id="name"></label>
+                        <p>Email</p>
+                        <label id="email"></label>
+                        <p>Phone </p>
+                        <label id="phone"></label>
+                        <p>Address </p>
+                        <label id="address"></label>
+                        <p>Position</p>
+                        <label id="position"></label>
+                        <p>Salary </p>
+                        <label id="salary"></label>
+                        <p>Habilidades </p>
+                        <ul id='skills'>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">no</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/registro.js"></script>
+    </body>
+</html>
